@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+    <title>DEscifrado</title>
+</head>
+<body style="background-color: yellow;">
+    <div class="col-md-5 offset-md-3" style="margin-top: 4%;">
+        <center>
+            <h1>DESCIFRADO</h1>
+            <br>
+            <table class=".table-bordered">
+                <center><h5>SELECIONE EL TIPO DE CIFRADO</h5></center>
+                <br>
+                <select class="form-select" name="tipoAES" id="tipo">
+                    <option value="128">Tipo 128</option>
+                    
+                    <option value="192">Tipo 192</option>
+                    
+                    <option value="256">Tipo 256</option>
+                    
+                </select>
+                <br>
+                <br>
+                <textarea class="form-control" id="txtcifrado" placeholder="Mensaje Cifrado" required></textarea>
+                <br>
+                <input class="form-control" type="txt" placeholder="Clave" id="clave" >
+            <td>
+                <input class="btn btn-dark" type="button" value="Descifrar" onclick="descifrar()">
+                <br>
+                <br>
+            </td>
+            <br>
+            <tr>
+                El texto descifrado es:<br>
+                <textarea class="form-control" id="txtdescifrado" placeholder="Texto Descifrado" disabled></textarea>
+            </tr>
+                
+                <br>
+                
+                <p id="txt"></p>
+                
+                <div id="resultado"></div>
+        </table>
+            
+        
+        </center>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js" ></script>
+    <script src="AES.JS" ></script>
+</body>
+</html>

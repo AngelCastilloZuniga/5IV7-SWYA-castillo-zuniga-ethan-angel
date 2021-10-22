@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú AES</title>
+    
+    <style>
+        body{
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-attachment: fixed;
+        }
+        .vis{
+            background-color: rgb(255, 0, 0);
+            width: 80%;
+        }
+    </style>
+</head>
+<body style="background-color: red;">
+    
+    <div class="input-group-prepend" style="margin-top: 4%;">
+        <center>
+        <header>
+            <h1>AES MENU</h1>
+        </header>
+        <br>
+        <p><button  class="btn btn-dark"><a href="Cifrado.html">Cifrar</a></button></p>
+        <p><button class="btn btn-dark"><a href="Decifrado.html">Descifrar</a></button></p>
+        </center>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js" ></script>
+    <script src="js/aes.js" ></script>
+</body>
+</html>
